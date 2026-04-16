@@ -24,18 +24,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        QWERTY {
+        Colemak-DH {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
-            // | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ESC  |
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "QWERTY";
+            display-name = "Colemak";
             bindings = <
-&kp ESC    &kp Q  &kp W    &kp E     &kp R           &kp T        &kp Y        &kp U            &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &lt 3 S  &lt 2 D   &lt 1 F         &kp G        &kp H        &lt 1 J          &lt 2 K    &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X    &kp C     &kp V           &kp B        &kp N        &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
+&kp ESC    &kp Q  &kp W    &kp F     &kp P           &kp B        &kp J        &kp L            &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp TAB    &kp A  &lt 3 R  &lt 2 S   &lt 1 T         &kp G        &kp M        &lt 1 N          &lt 2 E    &kp I    &kp O     &kp APOS
+&kp LCTRL  &kp Z  &kp X    &kp C     &kp D           &kp V        &kp K        &kp H            &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
                            &kp LGUI  &kp LEFT_SHIFT  &kp SPACE    &lt 4 ENTER  &kp RIGHT_SHIFT  &kp RALT
             >;
         };
@@ -105,22 +105,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        Colemak-DH {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            display-name = "Colemak";
-            bindings = <
-&kp ESC    &kp Q  &kp W    &kp F     &kp P           &kp B        &kp J        &kp L            &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp TAB    &kp A  &lt 3 R  &lt 2 S   &lt 1 T         &kp G        &kp M        &lt 1 N          &lt 2 E    &kp I    &kp O     &kp APOS
-&kp LCTRL  &kp Z  &kp X    &kp C     &kp D           &kp V        &kp K        &kp H            &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
-                           &kp LGUI  &kp LEFT_SHIFT  &kp SPACE    &lt 4 ENTER  &kp RIGHT_SHIFT  &kp RALT
             >;
         };
     };
